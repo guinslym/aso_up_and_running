@@ -4,16 +4,17 @@ List of steps to create app (Django/Rails/Sinatra/...) on asmallorange shared ho
 
 1. Python
 	1. [Flask](http://flask.pocoo.org/)
-	2. Django
-	3. Pyramid
-	4. Bottle
+	2. [Django](https://www.djangoproject.com/)
+	3. [Pyramid](http://www.pylonsproject.org/)
+	4. [Bottle](http://bottlepy.org/docs/dev/index.html)
 2. Ruby
-	1. Ruby on Rails
-	2. Sinatra
+	1. [Ruby on Rails](http://rubyonrails.org/)
+	2. [Sinatra](http://www.sinatrarb.com/)
 3. Node
-	1. Express
+	1. [Nodejs](https://nodejs.org/en/)
+	2. [Expressjs](http://expressjs.com/)
 4. Php
-	1. Silex micro framework
+	1. [Silex micro framework](http://silex.sensiolabs.org/)
 
 ## Contributing
 
