@@ -1,5 +1,5 @@
-# asmallorange_app_up_and_running
-List of steps to create app (Django/Rails/Sinatra/...) on asmallorange shared hosting server.
+# ASO_up_and_running
+List of steps to create apps (Django/Rails/Sinatra/...) on asmallorange shared hosting server.
 
 
 1. Python

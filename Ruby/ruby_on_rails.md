@@ -46,6 +46,13 @@ end
 	*	`touch tmp/restart.txt`
 10. Go to  `http://www.example.com/newapp` or `http://www.example.com/students` 
 
+##Notes
+1.  You cannot necessarly add gems on your Gemfile and `bundle install`. To do so 
+	*	Add you gems (i.e : `gem 'bereshit', '~> 0.0.6'`)
+	* Contact the tech support so that they will do a `bundle install`
+	* If you create other Ruby on Rails applications using the same gems, there is no need to contact the tech support because the gems are already install globally on the server
+2. 	To lists all the gems that are installed on the server `gem query --local` or `ruby -S gem list --local`
+
 
 ## Todo
 1. Add step for deploying on the root as `http://www.example.com/` instead of `http://www.example.com/newapp`
