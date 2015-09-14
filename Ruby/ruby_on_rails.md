@@ -47,7 +47,9 @@ end
 
 
 ## Todo
-1. Create a wiki instead
+1. Add step for deploying on the root as `http://www.example.com/` instead of `http://www.example.com/newapp`
+2. Add step for `capistrano` or `mina` or `puma`
+3. Create a wiki instead
 
 ## Contributing
 
