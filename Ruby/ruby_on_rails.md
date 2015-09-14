@@ -60,6 +60,7 @@ end
 1. Add step for deploying on the root as `http://www.example.com/` instead of `http://www.example.com/newapp`
 2. Add step for `capistrano` or `mina` or `puma`
 3. Create a wiki instead
+4. Add a video tutorial
 
 ## Contributing
 
