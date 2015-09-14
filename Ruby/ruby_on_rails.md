@@ -39,7 +39,9 @@ end
 ```
 8.	type on your command line (terminal) 
 	*	`rake db:create db:migrate db:seed`
-
+9. 	Refresh your application 
+	*	`touch tmp/restart.txt`
+10. Go to  `http://www.example.com/newapp` or `http://www.example.com/students` 
 
 ## Contributing
 
