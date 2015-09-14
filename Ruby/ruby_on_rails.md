@@ -1,10 +1,12 @@
-# asmallorange_app_up_and_running
+# asmallorange.com Ruby on Rails
 These is a list of steps or reminder :) to create a Ruby on Rails app on asmallorange shared hosting server. These steps are adapted from https://kb.asmallorange.com/customer/portal/articles/1603613-get-ruby-on-rails-up-and-running?b_id=4859
 
 
 # Steps
 
 1.	Login to ssh
+	*	I'm using Unix or a Unix-like computer
+	*	`ssh your_user_name@your_website_ip` like `ssh jonhdoe@12.345.67.890`
 	* type `pwd` and make sure that you are on `home/your_user_name`
 2.  Setup the LANG environment variable so there's proper UTF-8 support:
 	*	echo "export LANG=en_US.UTF-8" >> ~/.bashrc
