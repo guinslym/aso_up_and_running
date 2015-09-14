@@ -18,7 +18,7 @@ This is a list of steps or reminder :) to create a Ruby on Rails app on asmallor
 	*	Open `config/routes.rb` and uncomment the line `#root "welcome#index"` so that it will look `root "welcome#index"`
 5.  Link your Rails application into your web directory so that you may access the Rails application on your website:
 	*	`cd ~/public_html`
-​	*	`ln -s ../newapp/public newapp`
+*	`ln -s ../newapp/public newapp`
 6. 	Go back to your app and create a `.htaccess` file with this content
 	*	`cd -`
 	* vim public/.htaccess
