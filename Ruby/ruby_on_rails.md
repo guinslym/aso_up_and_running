@@ -1,5 +1,5 @@
 # asmallorange_app_up_and_running
-List of steps to create a Ruby on Rails app on asmallorange shared hosting server
+These is a list of steps or reminder :) to create a Ruby on Rails app on asmallorange shared hosting server. These steps are adapted from https://kb.asmallorange.com/customer/portal/articles/1603613-get-ruby-on-rails-up-and-running?b_id=4859
 
 
 # Steps
@@ -42,6 +42,10 @@ end
 9. 	Refresh your application 
 	*	`touch tmp/restart.txt`
 10. Go to  `http://www.example.com/newapp` or `http://www.example.com/students` 
+
+
+## Todo
+1. Create a wiki instead
 
 ## Contributing
 
