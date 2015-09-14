@@ -48,7 +48,7 @@ end
 10. Go to  `http://www.example.com/newapp` or `http://www.example.com/students` 
 
 ##Notes
-1.  You cannot necessarly add gems on your Gemfile and `bundle install` them. To do so 
+1.  You cannot necessarly add gems to your Gemfile and `bundle install` them. To do so 
 	*	Add your gems (i.e : `gem 'bereshit', '~> 0.0.6'`)
 	* Contact the tech support so that they will do a `bundle install`
 	* If you create other Ruby on Rails applications using the same gems, there is no need to contact the tech support because the gems are already install globally on the server. You can `bundle install` install it yourself
