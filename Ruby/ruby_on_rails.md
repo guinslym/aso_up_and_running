@@ -21,7 +21,7 @@ This is a list of steps or reminder :) to create a Ruby on Rails app on asmallor
 	*	`ln -s ../newapp/public newapp`
 6. 	Go back to your app and create a `.htaccess` file with this content
 	*	`cd -`
-	* vim public/.htaccess
+	* `vim public/.htaccess`
 ```php
 PassengerRuby /usr/local/bin/ruby
 PassengerAppRoot /home/username/newapp
