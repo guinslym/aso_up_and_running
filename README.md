@@ -1,12 +1,19 @@
 # asmallorange_app_up_and_running
-List of steps to create app (Django/Rails/Sinatra/...) on asmallorange shared hosting server
+List of steps to create app (Django/Rails/Sinatra/...) on asmallorange shared hosting server.
 
 
-#
-1. Ruby on Rails
-2. Django
-3. Flask
-4. Sinatra
+1. Python
+	1. Flask
+	2. Django
+	3. Pyramid
+	4. Bottle
+2. Ruby
+	1. Ruby on Rails
+	2. Sinatra
+3. Node
+	1. Express
+4. Php
+	1. Silex micro framework
 
 ## Contributing
 
