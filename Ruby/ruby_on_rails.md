@@ -39,7 +39,7 @@ names = ['Sandra', 'Chris', 'Matt', 'Stephanie', 'Judy']
 	)
 end
 ```
-8.	type on your command line (terminal) 
+8.	type in your command line (terminal) 
 	*	`rake db:create db:migrate db:seed`
 9. 	Refresh your application 
 	*	`touch tmp/restart.txt`
