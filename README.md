@@ -3,7 +3,7 @@ List of steps to create app (Django/Rails/Sinatra/...) on asmallorange shared ho
 
 
 1. Python
-	1. Flask
+	1. [Flask](http://flask.pocoo.org/)
 	2. Django
 	3. Pyramid
 	4. Bottle
