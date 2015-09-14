@@ -30,6 +30,7 @@ RailsBaseURI /newapp
 7. 	Create models on your app
 	*	`rails g scaffold student name age:integer`
 	*	Open up `db/seed.rb` and add this content
+	* `vim db/seed.rb`
 ```ruby
 names = ['Sandra', 'Chris', 'Matt', 'Stephanie', 'Judy']
 30.times do 
