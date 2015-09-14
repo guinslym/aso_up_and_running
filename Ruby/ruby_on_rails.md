@@ -22,6 +22,7 @@ This is a list of steps or reminder :) to create a Ruby on Rails app on asmallor
 6. 	Go back to your app and create a `.htaccess` file with this content
 	*	`cd -`
 	* `vim public/.htaccess`
+	* **Notes:** on the following you will need to replace `username` with your username. To find it type `whoami` in the command line
 ```php
 PassengerRuby /usr/local/bin/ruby
 PassengerAppRoot /home/username/newapp
@@ -29,8 +30,8 @@ RailsBaseURI /newapp
 ```
 7. 	Create models on your app
 	*	`rails g scaffold student name age:integer`
-	*	Open up `db/seed.rb` and add this content
-	* `vim db/seed.rb`
+	*	Open up `db/seeds.rb` and add this content
+	* `vim db/seeds.rb`
 ```ruby
 names = ['Sandra', 'Chris', 'Matt', 'Stephanie', 'Judy']
 30.times do 
@@ -41,7 +42,7 @@ names = ['Sandra', 'Chris', 'Matt', 'Stephanie', 'Judy']
 end
 ```
 8.	type in your command line (terminal) 
-	*	`rake db:create db:migrate db:seed`
+	*	`rake db:create db:migrate db:seed RAILS_ENV="production"`
 9. 	Refresh your application 
 	*	`touch tmp/restart.txt`
 10. Go to  `http://www.example.com/newapp` or `http://www.example.com/students` 
