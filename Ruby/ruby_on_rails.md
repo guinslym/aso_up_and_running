@@ -51,7 +51,9 @@ end
 	*	Add your gems (i.e : `gem 'bereshit', '~> 0.0.6'`)
 	* Contact the tech support so that they will do a `bundle install`
 	* If you create other Ruby on Rails applications using the same gems, there is no need to contact the tech support because the gems are already install globally on the server
-2. 	To lists all the gems that are installed on the server `gem query --local` or `ruby -S gem list --local`
+2. 	To view the lists of all the gems that are installed on the server don't type `gem query --local` or `ruby -S gem list --local`. It will only show a partial list of gems
+	* you can list this directory to view the gems installed on your server
+	* `ls /usr/local/rubies/ruby-1.9.3/lib/ruby/gems/1.9.1/gems/`
 
 
 ## Todo
