@@ -62,6 +62,11 @@ end
 	* you can list this directory to view the gems installed on your server
 	* `ls /usr/local/rubies/ruby-1.9.3/lib/ruby/gems/1.9.1/gems/`
 
+## Troubleshooting errors
+1. 	There is 3 ways to resolve your issues for Ruby on Rails (i.e 500 error)
+		1. 	Check your app logs `vim logs/production.txt`
+		2. 	On your CPanel go to `Errors`
+		3.  Lastly if you the two previous steps didn't work then contact a **asmallorange tech support** online or create a **ticket**
 
 ## Todo
 1. Add step for deploying on the root as `http://www.example.com/` instead of `http://www.example.com/newapp`
