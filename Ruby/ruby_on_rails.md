@@ -16,7 +16,7 @@ This is a list of steps or reminder :) to create a Ruby on Rails app on asmallor
 	*	`cd newapp`
 	*	`rails g controller welcome index`
 	*	Open `config/routes.rb` and uncomment the line `#root "welcome#index"` so that it will look `root "welcome#index"`
-5.      Generate and add a secret token to your app (Rails 4)
+5. 	Generate and add a secret token to your app (Rails 4)
   *	`rake secret`
   *	Copy the result (without trailling space or return chariot)
   *	`vim config/secrets.yml`
