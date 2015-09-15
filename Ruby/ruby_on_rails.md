@@ -39,8 +39,7 @@ RailsBaseURI /newapp
 
 7. 	Create models on your app
 	*	`rails g scaffold student name age:integer`
-	*	Open up `db/seeds.rb` and add this content
-	* `vim db/seeds.rb`
+	*	Open up `vim db/seeds.rb` and add this content
 ```ruby
 names = ['Sandra', 'Chris', 'Matt', 'Stephanie', 'Judy']
 30.times do 
@@ -60,7 +59,7 @@ end
 1.  You cannot necessarly add gems to your Gemfile and `bundle install` them. To do so 
 	*	Add your gems (i.e : `gem 'bereshit', '~> 0.0.6'`)
 	* Contact the tech support so that they will do a `bundle install`
-	* If you create other Ruby on Rails applications using the same gems, there is no need to contact the tech support because the gems are already install globally on the server. You can `bundle install` install it yourself
+	* If you create other Ruby on Rails applications using the same gems, there is no need to contact the tech support because the gems are already install globally on the server. You can `bundle install` them yourself
 2. 	To view the lists of all the gems that are installed on the server don't type `gem query --local` or `ruby -S gem list --local`. It will only show a partial list of gems
 	* you can list this directory to view the gems installed on your server
 	* `ls /usr/local/rubies/ruby-1.9.3/lib/ruby/gems/1.9.1/gems/`
