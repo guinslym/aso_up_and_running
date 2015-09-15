@@ -64,9 +64,9 @@ end
 
 ## Troubleshooting errors
 1. 	There is 3 ways to resolve your issues for Ruby on Rails (i.e 500 error)
-	1. 	Check your app logs `vim logs/production.txt`
-	2. 	On your CPanel go to `Errors`
-	3.  Lastly if you the two previous steps didn't work then contact a **asmallorange tech support** online or create a **ticket**
+	1. 	Check your app logs `vim logs/production.txt` or `tail -n 30 logs/production.txt`
+	2. 	On your CPanel homepage go to `Errors`
+	3.  Lastly, if you the two previous steps didn't work then contact a **asmallorange tech support** online or create a **ticket**
 
 ## Todo
 1. Add step for deploying on the root as `http://www.example.com/` instead of `http://www.example.com/newapp`
