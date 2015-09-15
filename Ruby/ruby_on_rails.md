@@ -34,6 +34,9 @@ PassengerRuby /usr/local/bin/ruby
 PassengerAppRoot /home/username/newapp
 RailsBaseURI /newapp
 ```
+
+## Adding features and models on your new rails app
+
 7. 	Create models on your app
 	*	`rails g scaffold student name age:integer`
 	*	Open up `db/seeds.rb` and add this content
