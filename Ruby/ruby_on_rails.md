@@ -21,7 +21,7 @@ This is a list of steps or reminder :) to create a Ruby on Rails app on asmallor
   *	Copy the result (without trailling space or return chariot)
   *	`vim config/secrets.yml`
   *	Add you secret key `secret_key_base: add_your_key`
-  *	**Notes** : it's **better** and **safer** to add the key to your environment variables you could use https://github.com/sstephenson/rbenv-vars
+  *	**Notes** : it's **better** and **safer** to add the key to your environment variables but you should test if **passenger** load them or not.
 6.  Link your Rails application into your web directory so that you may access the Rails application on your website:
 	*	`cd ~/public_html`
 	*	`ln -s ../newapp/public newapp`
