@@ -7,18 +7,18 @@ This is a list of steps or reminder :) to create a Sinatra app on asmallorange s
 
 # Steps
 
-A.	Login to ssh
+1.	Login to ssh
 	*	`ssh your_user_name@your_website_ip` like `ssh jonhdoe@12.345.67.890`
 	* type `pwd` and make sure that you are on `home/your_user_name`
-B.  Setup the LANG environment variable so there's proper UTF-8 support:
+2.  Setup the LANG environment variable so there's proper UTF-8 support:
 	* If you had already done this current step when you had created a previous Ruby on Rails app on the server, then skip this step
 	*	`echo "export LANG=en_US.UTF-8" >> ~/.bashrc`
 	*	`source ~/.bashrc`
-C.  Retrieve your shared hosting server ruby version
+3.  Retrieve your shared hosting server ruby version
 	*	`ruby --version`
-D. 	Create a dir for the project
+4. 	Create a dir for the project
 	*	`mkdir sinatra-blog && cd sinatra-blog`
-E.  Create a Gemfile
+5.  Create a Gemfile
 ```ruby
 # Gemfile
 
