@@ -66,9 +66,11 @@ get "/hello/:name" do
 end
 ```
 3. 	Inside the folder `public` create an .htaccess file
+	*	**Notes** change username for your. 
+	*	To find your username type `whoami` in your terminal (server)
 ```ruby
 PassengerRuby /usr/local/bin/ruby
-PassengerAppRoot /home/wadiyabi/sinatra-blog
+PassengerAppRoot /home/username/sinatra-blog
 RailsBaseURI /sinatra-blog
 ```
 
