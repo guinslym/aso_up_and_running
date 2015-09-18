@@ -48,7 +48,9 @@ group :production do
  gem 'dm-mysql-adapter', '~> 1.2.0'
 end
 ```
-1. 	Create app.rb
+1. 	Create a public folder
+	*	`mkdir public`
+2. 	Create a file named `app.rb`
 ```ruby
 require 'sinatra'
 set :root, File.dirname(__FILE__)
@@ -63,7 +65,14 @@ get "/hello/:name" do
   "Hello #{params['name']}"
 end
 ```
-#not 
+3. 	Inside the folder `public` create an .htaccess file
+```ruby
+PassengerRuby /usr/local/bin/ruby
+PassengerAppRoot /home/wadiyabi/sinatra-blog
+RailsBaseURI /sinatra-blog
+```
+
+
 
 
 ## Contributing
