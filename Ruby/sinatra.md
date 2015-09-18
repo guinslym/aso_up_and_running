@@ -1,4 +1,7 @@
-# asmallorange.com Ruby on Rails
+###This tutorial is not complete yet
+
+
+# asmallorange.com Sinatra
 This is a list of steps or reminder :) to create a Sinatra app on asmallorange shared hosting server. These steps are adapted from https://kb.asmallorange.com/customer/portal/articles/1603613-get-ruby-on-rails-up-and-running?b_id=4859
 
 
@@ -17,19 +20,21 @@ D. 	Create a dir for the project
 	*	`mkdir sinatra-blog && cd sinatra-blog`
 E.  Create a Gemfile
 ```ruby
- Gemfile
+# Gemfile
 
 source 'https://rubygems.org'
-ruby "1.9.3" #or whatever your ruby version
 
 gem "sinatra"
-gem "activerecord"
-gem "sinatra-activerecord"
 gem 'sinatra-flash'
 gem 'sinatra-redirect-with-flash'
-gem 'dm-sqlite-adapter', '~> 1.2.0'
+gem 'bcrypt', '~> 3.1.10'
 
+#for db
+# I'm installing 2 ORM I don't know yet which one is better
+gem "activerecord"
+gem "sinatra-activerecord"
 gem 'datamapper', '~> 1.2.0'
+gem 'dm-sqlite-adapter', '~> 1.2.0'
 
 group :development do
  gem 'sqlite3'
@@ -42,6 +47,23 @@ group :production do
  #or
  gem 'dm-mysql-adapter', '~> 1.2.0'
 end
+```
+1. 	Create app.rb
+```ruby
+require 'sinatra'
+set :root, File.dirname(__FILE__)
+set :public_folder, Proc.new { File.join(root, "public") }
+
+
+get "/" do
+  "hello world"
+end
+
+get "/hello/:name" do
+  "Hello #{params['name']}"
+end
+```
+#not 
 
 
 ## Contributing
