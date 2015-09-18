@@ -7,7 +7,7 @@ This is a list of steps or reminder :) to create a Sinatra app on asmallorange s
 
 # Steps
 
-1.	Login to ssh
+1. 	Login to ssh
 	*	`ssh your_user_name@your_website_ip` like `ssh jonhdoe@12.345.67.890`
 	* type `pwd` and make sure that you are on `home/your_user_name`
 2.  Setup the LANG environment variable so there's proper UTF-8 support:
