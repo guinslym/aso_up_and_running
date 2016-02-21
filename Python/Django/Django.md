@@ -30,17 +30,17 @@ Don't install the latest version it's a shared server so sometimes installing th
 	*	`# replace 'myproj' with whatever your project name`
 	*	`django-admin startproject myproj `
 6. Create a symbolic link to your project so Python knows where it is
-	*	`cd ~/.env/env/lib/python3.4`
+	*	`cd ~/.env/env34/lib/python3.4`
 	*	`ln -s ~/website/myproj/myproj`
 	* `cd ~/public_html`
 7. Create a file called 'dispatch.fcgi' and paste in the following contents, changing 'username' to your actual username:
  ```python
- #!/home/username/.env/env/bin/python
+ #!/home/username/.env/env34/bin/python
 
 import sys
 import os
 
-sys.path.insert(0, '/home/username/.env/env/lib/pythonx.x/site-packages')
+sys.path.insert(0, '/home/username/.env/env34/lib/python3.4/site-packages')
 os.environ['DJANGO_SETTINGS_MODULE'] = 'myproj.settings'
 
 from django.core.servers.fastcgi import runfastcgi
