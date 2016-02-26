@@ -50,7 +50,7 @@ runfastcgi(method="threaded", daemonize="false")
 	* `chmod 755 dispatch.fcgi`
 9. Lastly, we need to create a `.htaccess` file to direct the browser to `dispatch.fcgi`.
 10 	Create a file in public_html called '.htaccess' and paste in the following
-```shell
+```python
 AddHandler fcgid-script .fcgi
 RewriteEngine On
 RewriteCond %{REQUEST_FILENAME} !-f
