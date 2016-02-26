@@ -49,7 +49,7 @@ runfastcgi(method="threaded", daemonize="false")
 8. Once you've saved it make it executable:
 	* `chmod 755 dispatch.fcgi`
 9. Lastly, we need to create a `.htaccess` file to direct the browser to `dispatch.fcgi`.
-10 	Create a file in public_html called '.htaccess' and paste in the following
+10 	Create a file in `cd ~/public_html` called `.htaccess` and paste in the following
 ```
 	AddHandler fcgid-script .fcgi
 	RewriteEngine On
