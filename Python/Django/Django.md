@@ -2,7 +2,7 @@
 This is a list of steps or reminder :) to create a Django webapp on asmallorange shared hosting server. These steps are adapted from https://kb.asmallorange.com/customer/portal/articles/1603414-install-django-using-virtualenv
 
 ###Django
-Don't install the latest version it's a shared server so sometimes installing the latest version won't work. If the latest version is 1.9.2 install 1.8.x instead.
+Don't install the latest version it's a shared server. Even if your `pip install flask` doesn't output an error. If the latest version is 1.9.4 install 1.9.1 or 1.8.9 instead.
 
 # Steps
 
@@ -78,7 +78,8 @@ runfastcgi(method="threaded", daemonize="false")
 	    'blog',
 	)
 ```
-4. Open and edit your urls file  `vim ~/website/myproj/myproj/urls.py` and modify your `urlpattern` by adding your `blog` urls
+4. **Verify the website** is still working. `yourproject.com/hello_django`. Because sometimes it crashes at that place.
+5. Open and edit your urls file  `vim ~/website/myproj/myproj/urls.py` and modify your `urlpattern` by adding your `blog` urls
 ```python
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
