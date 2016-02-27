@@ -63,21 +63,21 @@ runfastcgi(method="threaded", daemonize="false")
 1. `cd ~/website/myproj`
 2. `python manage.py startapp blog` where `blog` represent your new application name
 3. Open and edit your settings file `vim ~/website/myproj/myproj/settings.py` and add ỳour `blog` app to your INSTALL_APPS
-```python
-	INSTALLED_APPS = (
-	    'django.contrib.admin',
-	    'django.contrib.auth',
-	    'django.contrib.contenttypes',
-	    'django.contrib.sessions',
-	    'django.contrib.messages',
-	    'django.contrib.staticfiles',
-	    'django.contrib.sites',
-	    'django.contrib.humanize',
+	```python
+		INSTALLED_APPS = (
+		    'django.contrib.admin',
+		    'django.contrib.auth',
+		    'django.contrib.contenttypes',
+		    'django.contrib.sessions',
+		    'django.contrib.messages',
+		    'django.contrib.staticfiles',
+		    'django.contrib.sites',
+		    'django.contrib.humanize',
 
-	    #applications
-	    'blog',
-	)
-```
+		    #applications
+		    'blog',
+		)
+	```
 4. **Verify if the website** is still working. `yourproject.com/hello_django`. Because sometimes it crashes at that place.
 5. Open and edit your urls file  `vim ~/website/myproj/myproj/urls.py` and modify your `urlpattern` by adding your `blog` urls
 ```python
@@ -85,7 +85,6 @@ urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
     url(r'^blog/', include('applications.blog.urls') ),
 ]
-
 ```
 5. Create a `urls.py` file in your blog app. `vim ~/website/myproj/blog/urls.py` and add the following
 ```python
