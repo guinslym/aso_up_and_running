@@ -78,7 +78,7 @@ runfastcgi(method="threaded", daemonize="false")
 	    'blog',
 	)
 ```
-4. **Verify the website** is still working. `yourproject.com/hello_django`. Because sometimes it crashes at that place.
+4. **Verify if the website** is still working. `yourproject.com/hello_django`. Because sometimes it crashes at that place.
 5. Open and edit your urls file  `vim ~/website/myproj/myproj/urls.py` and modify your `urlpattern` by adding your `blog` urls
 ```python
 urlpatterns = [
