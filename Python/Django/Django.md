@@ -2,7 +2,7 @@
 This is a list of steps or reminder :) to create a Django webapp on asmallorange shared hosting server. These steps are adapted from https://kb.asmallorange.com/customer/portal/articles/1603414-install-django-using-virtualenv
 
 ###Django
-Don't install the latest version it's a shared server. Even if your `pip install flask` doesn't output an error. If the latest version is 1.9.4 install 1.9.1 or 1.8.9 instead.
+Don't install the latest version it's a shared server. Even if your `pip install django` doesn't output an error. If the latest version is 1.9.4 install 1.9.1 or 1.8.9 instead. I had some issue by installing the latest version.
 
 # Steps
 
