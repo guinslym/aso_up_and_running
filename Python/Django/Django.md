@@ -80,29 +80,29 @@ runfastcgi(method="threaded", daemonize="false")
 	```
 4. **Verify if the website** is still working. `yourproject.com/hello_django`. Because sometimes it crashes at that place.
 5. Open and edit your urls file  `vim ~/website/myproj/myproj/urls.py` and modify your `urlpattern` by adding your `blog` urls
-```python
-urlpatterns = [
-    url(r'^admin/', include(admin.site.urls)),
-    url(r'^blog/', include('applications.blog.urls') ),
-]
+	```python
+	urlpatterns = [
+	    url(r'^admin/', include(admin.site.urls)),
+	    url(r'^blog/', include('applications.blog.urls') ),
+	]
 ```
-5. Create a `urls.py` file in your blog app. `vim ~/website/myproj/blog/urls.py` and add the following
-```python
-# -*- coding: utf-8 -*
-from django.conf.urls import url, include
+6. Create a `urls.py` file in your blog app. `vim ~/website/myproj/blog/urls.py` and add the following
+	```python
+	# -*- coding: utf-8 -*
+	from django.conf.urls import url, include
 
-from . import views
-from django.views import generic
+	from . import views
+	from django.views import generic
 
-#not mandatory
-app_name = 'blog'
+	#not mandatory
+	app_name = 'blog'
 
-urlpatterns = [
-      url(r'^information/$', views.information, name='information'),
-]
+	urlpatterns = [
+	      url(r'^information/$', views.information, name='information'),
+	]
 
-```
-6. Open and edit your `views.py` file in your `blog` app. `vim ~/website/myproj/blog/views.py` and add the following
+	```
+7. Open and edit your `views.py` file in your `blog` app. `vim ~/website/myproj/blog/views.py` and add the following
 ```python
 from django.shortcuts import render
 from django.http import HttpResponse
@@ -113,7 +113,7 @@ def information(request):
     return HttpResponse('<h1>Hello world --blog app</h1>')
 
 ```
-
+8. Now access on `yourwebsite.com/blog/information` or if you have choose to create a subdomain  `yourwebsite.com/hello_django/blog/information`
 
 ## Contributing
 
