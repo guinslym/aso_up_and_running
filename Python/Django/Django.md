@@ -49,14 +49,70 @@ runfastcgi(method="threaded", daemonize="false")
 8. Once you've saved it make it executable:
 	* `chmod 755 dispatch.fcgi`
 9. Lastly, we need to create a `.htaccess` file to direct the browser to `dispatch.fcgi`.
-10 	Create a file in `cd ~/public_html` called `.htaccess` and paste in the following
+10 	Create a file in `cd ~/public_html/` called `.htaccess` and paste in the following. I you want to create your website as a subdomain (i.e `hello.yourwebsite.com` or `yourwebsite.com/hello_django`) Then you must create a folder inside your `mkdir ~/public_html/hello_django` and create this `.htaccess`  file
 ```
 	AddHandler fcgid-script .fcgi
 	RewriteEngine On
 	RewriteCond %{REQUEST_FILENAME} !-f
 	RewriteRule ^(.*)$ dispatch.fcgi/$1 [QSA,L]
 ```
-11. 	Access yourwebsite/your_django_project
+11. Access on `yourwebsite.com` or if you have choose to create a subdomain  `yourwebsite.com/hello_django`
+
+#Adding app to your Django Project
+
+1. `cd ~/website/myproj`
+2. `python manage.py startapp blog` where `blog` represent your new application name
+3. Open and edit your settings file `vim ~/website/myproj/myproj/settings.py` and add ỳour `blog` app to your INSTALL_APPS
+```python
+INSTALLED_APPS = (
+    'django.contrib.admin',
+    'django.contrib.auth',
+    'django.contrib.contenttypes',
+    'django.contrib.sessions',
+    'django.contrib.messages',
+    'django.contrib.staticfiles',
+    'django.contrib.sites',
+    'django.contrib.humanize',
+
+    #applications
+    'blog',
+)
+```
+4. Open and edit your urls file  `vim ~/website/myproj/myproj/urls.py` and modify your `urlpattern` by adding your `blog` urls
+```python
+urlpatterns = [
+    url(r'^admin/', include(admin.site.urls)),
+    url(r'^blog/', include('applications.blog.urls') ),
+]
+
+```
+5. Create a `urls.py` file in your blog app. `vim ~/website/myproj/blog/urls.py` and add the following
+```python
+# -*- coding: utf-8 -*
+from django.conf.urls import url, include
+
+from . import views
+from django.views import generic
+
+#not mandatory
+app_name = 'blog'
+
+urlpatterns = [
+      url(r'^information/$', views.information, name='information'),
+]
+
+```
+6. Open and edit your `views.py` file in your `blog` app. `vim ~/website/myproj/blog/views.py` and add the following
+```python
+from django.shortcuts import render
+from django.http import HttpResponse
+
+# Create your views here.
+
+def information(request):
+    return HttpResponse('<h1>Hello world --blog app</h1>')
+
+```
 
 
 ## Contributing
