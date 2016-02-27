@@ -58,7 +58,7 @@ runfastcgi(method="threaded", daemonize="false")
 ```
 11. Access on `yourwebsite.com` or if you have choose to create a subdomain  `yourwebsite.com/hello_django`
 
-#Adding app to your Django Project
+#Adding an app to your Django Project
 
 1. `cd ~/website/myproj`
 2. `python manage.py startapp blog` where `blog` represent your new application name
